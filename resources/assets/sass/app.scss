@@ -24,6 +24,18 @@ h6, .h6 {
   color: #333;
 }
 
+#flash-message {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  animation: flash-message 8s forwards;
+}
+
+@keyframes flash-message {
+  0%   {opacity: 1;}
+  100% {opacity: 0; display:none;}
+}
 
 /*
  * Override Bootstrap's default container.
